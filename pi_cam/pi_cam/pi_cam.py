@@ -19,8 +19,8 @@ class Pi_Cam_Publisher(Node):
         ret, frame = self.cap.read()       
         if ret:         
             self.publisher.publish(self.br.cv2_to_imgmsg(frame))         
-            cv2.imshow('frame', frame)         
-            cv2.waitKey(1)      
+            #cv2.imshow('frame', frame)         
+            #cv2.waitKey(1)      
         else:          
             print("cam..")
 
